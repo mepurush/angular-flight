@@ -1,11 +1,19 @@
-<div class="searchContainer">
-  <div>
+<div class="row" >
+  <div class="searchContainer col-sm-12">
     <h2 class="titleHeader">Search Domestic & International Flights</h2>
-    <span><input class="whiteRadio" type="radio" value="Round Trip"> Round Trip</span>
-    <span><input class="whiteRadio" type="radio" value="One Way"> One Way </span>
-    <span><input class="whiteRadio" type="radio" value="Multi City"> Multi City</span>
-    <div>
-      <input id="searchFlight" type="search"/>
+    <div class="content-leftalign">
+    <div class="col-sm-6">
+      <label class="whiteRadio"><input name="optradio" type="radio" value="Round Trip"> Round Trip</label>
+      <label class="whiteRadio" ><input name="optradio" type="radio" value="One Way"> One Way </label>
+      </div>
+
+    <div class="col-sm-12">
+      <span class="form-inline">
+        <input class="form-control" id="searchFlight" type="search" placeholder="From: City or Airport"/>
+        <input class="form-control inputpadding" id="searchFlight" type="search" placeholder="To: City or Airport"/>
+      </span>
     </div>
+  </div>
+
 </div>
 </div>

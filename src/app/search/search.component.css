@@ -1,7 +1,5 @@
 .searchContainer{
     background:#2d67b2;
-    width: 720px;
-    height: 400px;
     padding:20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,7 +15,14 @@
 
 .whiteRadio{
     color: #ffffff;
-    font-weight: lighter;
-    padding: 10px;
-    border: 10px;
+    margin:0px,0px,10px,0px;
+}
+
+.inputpadding{
+    margin: 10px;
+}
+
+.content-leftalign{
+    margin: 10px;
+    
 }
