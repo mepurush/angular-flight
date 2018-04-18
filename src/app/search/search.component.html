@@ -2,17 +2,33 @@
   <div class="searchContainer col-sm-12">
     <h2 class="titleHeader">Search Domestic & International Flights</h2>
     <div class="content-leftalign">
-    <div class="col-sm-6">
-      <label class="whiteRadio"><input name="optradio" type="radio" value="Round Trip"> Round Trip</label>
-      <label class="whiteRadio" ><input name="optradio" type="radio" value="One Way"> One Way </label>
+    <div class="col-sm-6 col-sx-12">
+      <label class="whiteText"><input name="optradio" type="radio" value="Round Trip"> Round Trip</label>
+      <label class="whiteText" ><input name="optradio" type="radio" value="One Way"> One Way </label>
+    </div>
+
+    <div class="formWrap">
+      <div class="col-sm-6 col-sx-12">
+        <span class="form-inline">
+          <input class="form-control inputTxtLarge inputSrc" id="searchFlight" type="search" placeholder="From: City or Airport"/>
+          <input class="form-control" id="searchFlight" type="search" placeholder="To: City or Airport"/>
+        </span>
       </div>
 
     <div class="col-sm-12">
       <span class="form-inline">
-        <input class="form-control" id="searchFlight" type="search" placeholder="From: City or Airport"/>
-        <input class="form-control inputpadding" id="searchFlight" type="search" placeholder="To: City or Airport"/>
+        <div>
+          <p class="whiteText">Depart:</p>
+          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="date"/>
+        </div>
+        <div>
+          <p class="whiteText">Return:</p>
+          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="date"/>
+        </div>
       </span>
     </div>
+  </div>
+
   </div>
 
 </div>

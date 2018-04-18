@@ -7,15 +7,24 @@
 
 }
 
+.formWrap{
+    max-width: 990px;
+    width: 100%;
+    float: left;
+}
+
+.padT15{
+    padding-top: 15px;
+}
 .titleHeader{
     color: #ffffff;
     font-size: 30px;
     font-weight: lighter;
 }
 
-.whiteRadio{
+.whiteText{
     color: #ffffff;
-    margin:0px,0px,10px,0px;
+    margin-right:10px;
 }
 
 .inputpadding{
@@ -26,3 +35,4 @@
     margin: 10px;
     
 }
+
