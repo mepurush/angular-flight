@@ -1,35 +1,71 @@
-<div class="row" >
-  <div class="searchContainer col-sm-12">
+<form>
+  <div class="searchContainer">
     <h2 class="titleHeader">Search Domestic & International Flights</h2>
-    <div class="content-leftalign">
-    <div class="col-sm-6 col-sx-12">
-      <label class="whiteText"><input name="optradio" type="radio" value="Round Trip"> Round Trip</label>
-      <label class="whiteText" ><input name="optradio" type="radio" value="One Way"> One Way </label>
+
+    <div class="form-row col-sm-8">
+      <div class="col-auto">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineOption" id="oneWay-radio" value="One Way" />
+        <label class="form-check-label" for="oneWay-radio">One Way</label>
+      </div>
     </div>
 
-    <div class="formWrap">
-      <div class="col-sm-6 col-sx-12">
-        <span class="form-inline">
-          <input class="form-control inputTxtLarge inputSrc" id="searchFlight" type="search" placeholder="From: City or Airport"/>
-          <input class="form-control" id="searchFlight" type="search" placeholder="To: City or Airport"/>
-        </span>
+    <div class="col-auto">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineOption" id="round-trip-radio" value="Round Trip" />
+        <label class="form-check-label" for="round-trip-radio">Round Trip</label>
+      </div>
+    </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-sm-4">
+        <input class="form-control sharp-Edge" type="text" id="input-from" placeholder="From: City or Airport" />
+      </div>
+      <div class="col-sm-4">
+        <input class="form-control sharp-Edge" type="text" id="input-to" placeholder="To: City or Airport" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-row col-sm-4">
+        <div class="col form-group">
+          <label for="depart-date">Depart</label>
+          <input class="form-control sharp-Edge" type="date" id="depart-date" placeholder="DD/MM/YYYY" />
+        </div>
+        <div class="col form-group">
+          <label for="return-date">Return</label>
+          <input class="form-control sharp-Edge" type="date" id="return-date" placeholder="DD/MM/YYYY" />
+        </div>
       </div>
 
-    <div class="col-sm-12">
-      <span class="form-inline">
-        <div>
-          <p class="whiteText">Depart:</p>
-          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="date"/>
+      <div class="form-row  col-sm-4">
+        <div class="col form-group">
+          <label for="travellers">Travellers:</label>
+          <select id="travellers" class="form-control sharp-Edge">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </div>
-        <div>
-          <p class="whiteText">Return:</p>
-          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="date"/>
+        <div class="col form-group">
+          <label for="range">Class:</label>
+          <select id="range" class="form-control sharp-Edge">
+            <option selected>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+            <option>Premium Economy</option>
+          </select>
         </div>
-      </span>
+      </div>
+
+    </div>
+
+    <div class="form-row col-auto">
+      <button class="btn  sharp-Edge align-Right" type="submit">Get My Flight</button>
     </div>
   </div>
 
-  </div>
-
-</div>
-</div>
+</form>

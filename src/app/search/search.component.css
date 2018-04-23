@@ -25,6 +25,7 @@
 .whiteText{
     color: #ffffff;
     margin-right:10px;
+    margin-top: 10px;
 }
 
 .inputpadding{
@@ -34,5 +35,18 @@
 .content-leftalign{
     margin: 10px;
     
+}
+
+.input-space{
+    width:50%;
+    float: left;
+}
+
+.sharp-Edge{
+    border-radius: 0px;
+}
+
+.align-Right{
+    float: right;
 }
 
