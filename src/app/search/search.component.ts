@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+  travellersList:any[];
+  selectedTravellers:string;
+  constructor() {
+    this.travellersList = [];
 
-  constructor() { }
+   }
 
   ngOnInit() {
+    for(var i=1;i<10;i++){
+      this.travellersList.push(i);
+    }
+    
   }
 
 }
