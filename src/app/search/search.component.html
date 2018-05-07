@@ -1,6 +1,6 @@
 <form>
   <div class="searchContainer formWrap">
-    <h2 class="titleHeader">Search Domestic & International Flights</h2>
+    <p class="h1 text-white">Search Domestic & International Flights</p>
 
     <div class="form-row">
       <div class="col-auto">
@@ -19,34 +19,37 @@
     </div>
 
     <div class="form-row">
-      <div class="col">
+      <div class="col-sm-5">
         <input class="form-control sharp-Edge" type="text" id="input-from" placeholder="From: City or Airport" />
       </div>
-      
-      <div class="col">
+      <div class="col-2">
+          <button type="button" class="btn btn-default btn-circle float-centre">
+              <i class="fas fa-exchange-alt"></i>
+              </button>
+      </div>
+      <div class="col-sm-5">
         <input class="form-control sharp-Edge" type="text" id="input-to" placeholder="To: City or Airport" />
       </div>
     </div>
 
-    <div class="form-row">
-      
-        <div class="col form-group">
+    <div class="form-row">                                                          
+        <div class="col-sm-3 form-group">
           <label class="text-white" for="depart-date">Depart</label>
           <input class="form-control sharp-Edge" type="date" id="depart-date" />
         </div>
-        <div class="col form-group">
+        <div class="col-sm-3 form-group">
           <label class="text-white" for="return-date">Return</label>
           <input class="form-control sharp-Edge" type="date" id="return-date" />
         </div>
      
 
-        <div class="col form-group">
+        <div class="col-sm-3 form-group">
           <label class="text-white" for="travellers">Travellers:</label>
           <select  class="form-control sharp-Edge" id="travellers" [(ngModel)]="selectedTravellers">
             <option *ngFor="let tcount of travellersList">{{tcount}}</option>
           </select>
         </div>
-        <div class="col form-group">
+        <div class="col-sm-3 form-group">
           <label class="text-white" for="range">Class:</label>
           <select id="range" class="form-control sharp-Edge">
             <option selected>Economy</option>
