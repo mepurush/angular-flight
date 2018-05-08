@@ -8,8 +8,14 @@
 
 }
 
+.swap-Button{
+    display: flex;
+    justify-content: center;
+}
+
 .orange-Button{
     background:#f26722;
+    
 }
 
 .sharp-Edge{
@@ -25,7 +31,7 @@
     font-size: 12px;
     line-height: 1.428571429;
     border-radius: 15px;
-    align-self: center;
+    
   }
 
   .btn-circle.btn-lg {
